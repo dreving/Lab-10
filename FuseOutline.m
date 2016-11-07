@@ -20,7 +20,7 @@ end
 %check if map is new
 [success, lidPose] = lml.refinePose(fusedPose,ptsInModelFrame, maxIters)
 if success
-    fusedPose = fusePose(odoPose,lidPose)
+    fusedPose = fusePose(fusedPose,lidPose)
 end
 %if map is successful, then run fused pose to update 
 
